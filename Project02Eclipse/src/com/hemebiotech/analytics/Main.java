@@ -1,14 +1,11 @@
 package com.hemebiotech.analytics;
 
 import java.util.*;
-import com.hemebiotech.analytics.ReadSymptomDataFromFile;
-import com.hemebiotech.analytics.WriteSymptomDataToFile;
-import com.hemebiotech.analytics.AnalyticsCounter;
 
 public class Main {
 
     public static void main(String[] args) {
-        final String filepath = "Project02Eclipse/src/com/hemebiotech/analytics/symptoms.txt";
+        final String filepath = "Project02Eclipse/symptoms.txt";
 
         ISymptomReader iSymptomReader = new ReadSymptomDataFromFile(filepath);
         ISymptomWriter iSymptomWriter = new WriteSymptomDataToFile();
@@ -19,5 +16,4 @@ public class Main {
         Map<String, Integer> sortedMapSymptoms = analyticsCounter.sortSymptoms(mapSymptoms);
         analyticsCounter.writeSymptoms(sortedMapSymptoms);
     }
-
 }
