@@ -7,6 +7,15 @@ import java.util.Map;
 
 public class WriteSymptomDataToFile implements ISymptomWriter {
 
+    /**
+     * Method that writes the symptoms list received in param, in the "result.out"
+     * text file
+     * 
+     * @param symptoms a sorted list of symptoms, with occurrences already counted
+     * @return void
+     * @author Clara SLYS
+     */
+
     public void writeSymptoms(Map<String, Integer> symptoms) {
         if (symptoms != null) {
             try {
@@ -19,7 +28,6 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
                     System.out.println(entry.getKey() + " : " + entry.getValue());
                 }
                 writer.close();
-
             } catch (IOException e) {
                 e.printStackTrace();
             }

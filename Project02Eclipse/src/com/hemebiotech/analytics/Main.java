@@ -2,6 +2,16 @@ package com.hemebiotech.analytics;
 
 import java.util.*;
 
+/**
+ * Main class: entry point of the program.
+ * It calls the AnalyticsCounter class and the ISymptomReader and ISymptomWriter
+ * interfaces
+ * to use their methods.
+ * 
+ * @return void
+ * @author Clara SLYS
+ */
+
 public class Main {
 
     public static void main(String[] args) {
