@@ -78,6 +78,7 @@ public class AnalyticsCounter {
 	 * 
 	 * @param symptoms
 	 * @return void
+	 * @author Clara SLYS
 	 */
 	public void writeSymptoms(Map<String, Integer> symptoms) {
 		writer.writeSymptoms(symptoms);
